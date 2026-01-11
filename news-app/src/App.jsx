@@ -70,6 +70,7 @@ const NewsAggregator = () => {
 
           const claudeData = await claudeResponse.json();
           const summary = claudeData.content?.[0]?.text || article.description || 'No summary available';
+          console.log(summary);
 
           summarized.push({
             ...article,
